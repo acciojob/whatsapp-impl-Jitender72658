@@ -9,8 +9,8 @@ import java.util.List;
 @Service
 public class WhatsappService {
 
-    @Autowired
-    WhatsappRepository repository;
+
+    WhatsappRepository repository = new WhatsappRepository();
     public String  createUser (String name, String mobile) throws Exception{
           return   repository.create_user(name, mobile);
         }
