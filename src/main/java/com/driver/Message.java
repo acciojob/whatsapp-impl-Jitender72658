@@ -10,9 +10,14 @@ public class Message {
     public Message(){
 
     }
-    public Message(String content, int id){
+    public Message(int id, String content){
         this.content = content;
         this.id = id;
+    }
+    public Message(int id,String content, Date timestamp){
+        this.id = id;
+        this.content = content;
+        this.timestamp = timestamp;
     }
 
     public Message(String content){
